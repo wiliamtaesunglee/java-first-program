@@ -34,7 +34,7 @@ public class MortgageCalculator {
     @Override
     public String toString() {
         DecimalFormat df = new DecimalFormat(("####0.00"));
-        return "MonthlyPayment: " + df.format(monthlyPayment);
+        return "monthlyPayment: " + df.format(monthlyPayment);
     }
 
     public static void main(String[] args) {
@@ -42,6 +42,6 @@ public class MortgageCalculator {
         int termInYears = Integer.parseInt(args[1]);
         float annualRate = Float.parseFloat(args[2]);
         MortgageCalculator calculator = new MortgageCalculator(loanAmount, termInYears, annualRate);
-        System.out.println(calculator);
+        System.out.println(calculator.toString());
     }
 }
