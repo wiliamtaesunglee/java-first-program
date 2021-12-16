@@ -28,7 +28,7 @@ public class Finance {
         return false;
     }
 
-    private static void executeCommand(String command, String[] arguments) {
+    private static void executeCommand(String command, String[] arguments) throws IllegalAccessException {
         switch (command) {
             case BEST_LOAN_RATES:
                 System.out.println("Finding best loan rates ...");
@@ -45,7 +45,7 @@ public class Finance {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IllegalAccessException {
         String command = args[0];
         if (!commandsToUsage.containsKey(command)) {
             System.out.println(command + ": command not found");
