@@ -1,7 +1,7 @@
 package com.h2;
 
 public class Utilities {
-    public static long getLoanValue(String in) throws IllegalAccessException {
+    public static long getLongValue(String in) throws IllegalAccessException {
         long out = Long.MIN_VALUE;
         try {
             out = Long.parseLong(in);
