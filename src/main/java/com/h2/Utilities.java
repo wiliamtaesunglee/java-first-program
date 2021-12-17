@@ -14,7 +14,7 @@ public class Utilities {
     public static int getIntValue(String in) throws IllegalArgumentException {
         int out = Integer.MIN_VALUE;
         try {
-            Integer.parseInt(in);
+            out = Integer.parseInt(in);
         } catch (NumberFormatException e) {
             throw new IllegalArgumentException(in + " cannot be converted into a 'int' value. Exiting program");
         }
