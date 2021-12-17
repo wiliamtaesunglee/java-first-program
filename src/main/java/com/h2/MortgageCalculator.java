@@ -37,7 +37,7 @@ public class MortgageCalculator {
         return "monthlyPayment: " + df.format(monthlyPayment);
     }
 
-    public static void main(String[] args) throws IllegalAccessException {
+    public static void main(String[] args) throws IllegalArgumentException {
         long loanAmount = Utilities.getLongValue(args[0]);
         int termInYears = Utilities.getIntValue(args[1]);
         float annualRate = Utilities.getFloatValue(args[2]);
